@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия на все свет</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a{
+            color: white;
+        }
+
+        .group {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 10px; 
+            
+        }
+
+        .url-container {
+            border: 1px black solid;
+            border-radius: 12px;
+            overflow: hidden; /* Добавлено для обрезания изображений */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 10px;
+            margin: 0 10px 0 10px;
+        }
+
+        .url-container:hover {
+            background-color: #45a049;
+            transition: 0.5s;
+        }
+
+        .url-container a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .group {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Путешествия на все свет</h1>
+        <p class="description">Откройте мир вместе с нами!</p>
+        <a href="#" class="btn">Начать путешествие</a>
+    </header>
+    <div class="container">
+        <h2>О нас</h2>
+        <p>Добро пожаловать на сайт "Путешествия на все свет"! Мы предлагаем увлекательные рассказы о самых интересных местах на планете, советы по планированию путешествий и многое другое. Начните свое путешествие прямо сейчас!</p>
+        <h2>Самые популярные направления</h2>
+        
+        <div class="group">
+            <div class="url-container">
+                <a href="#">Европа</a>
+                <img src="image/01_Europe.adapt_.1900.1.jpg" alt="">
+            </div>
+
+            <div class="url-container">
+                <a href="#">Азия </a>
+                    <img src="image/asia.jpg" alt="">
+               
+            </div>
+
+            <div class="url-container">
+                <a href="#">Африка </a>
+                    <img src="image/africa.jpg" alt="">
+               
+            </div>
+
+            <div class="url-container">
+                <a href="#">Северная Америка</a>
+                    <img src="image/north america.webp" alt="">
+                
+            </div>
+
+            <div class="url-container">
+                <a href="#">Южная Америка</a>
+                    <img src="image/south america.jpg" alt="">
+                
+            </div>
+
+            <div class="url-container">
+                <a href="#">Австралия и Океания</a>
+                    <img src="image/oceania.jpg" alt="">
+                
+            </div>
+        </div>
+
+
+        <h2>Советы по путешествиям</h2>
+        <p>Планируя ваше следующее путешествие, не забудьте учитывать наши полезные советы:</p>
+        <ul>
+            <li>Составьте план заранее</li>
+            <li>Изучите местную культуру</li>
+            <li>Не забудьте про страховку</li>
+            <li>Берегите природу</li>
+        </ul>
+    </div>
+    <footer>
+        <p>Свяжитесь с нами: example@example.com</p>
+        <p>Социальные сети: <a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Twitter</a></p>
+    </footer>
+</body>
+</html>
